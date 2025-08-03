@@ -1,0 +1,30 @@
+2025-08-02 11:34:29,460 - INFO - insert_service - Movie inserted successfully
+2025-08-02 11:34:29,460 - ERROR - insert_service - Failed to insert actor: name missing
+2025-08-02 11:35:25,702 - INFO - insert_service - Movie inserted successfully
+2025-08-02 11:35:25,702 - ERROR - insert_service - Failed to insert actor: name missing
+2025-08-02 11:36:16,478 - INFO - insert_service - Movie inserted successfully
+2025-08-02 11:36:16,478 - ERROR - insert_service - Failed to insert actor: name missing
+2025-08-02 11:43:02,105 - INFO - insert_service - Movie inserted successfully
+2025-08-02 11:43:02,105 - ERROR - insert_service - Failed to insert actor: name missing
+2025-08-02 11:49:46,659 - INFO - insert_service - Movie inserted successfully
+2025-08-02 11:49:46,661 - ERROR - insert_service - Failed to insert actor: name missing
+2025-08-02 11:50:58,647 - INFO - insert_service - Movie inserted successfully
+2025-08-02 11:50:58,647 - ERROR - insert_service - Failed to insert actor: name missing
+2025-08-02 11:51:13,897 - INFO - insert_service - Movie inserted successfully
+2025-08-02 11:51:13,909 - ERROR - insert_service - Failed to insert actor: name missing
+2025-08-02 20:47:13,482 - INFO - insert_service - Movie inserted successfully
+2025-08-02 20:47:13,482 - ERROR - insert_service - Failed to insert actor: name missing
+2025-08-02 20:47:13,591 - INFO - __init__ - package: mysql.connector.plugins
+2025-08-02 20:47:13,592 - INFO - __init__ - plugin_name: caching_sha2_password
+2025-08-02 20:47:13,592 - INFO - __init__ - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-08-02 20:47:46,439 - INFO - insert_service - Movie inserted successfully
+2025-08-02 20:47:46,439 - ERROR - insert_service - Failed to insert actor: name missing
+2025-08-02 20:47:46,504 - INFO - __init__ - package: mysql.connector.plugins
+2025-08-02 20:47:46,504 - INFO - __init__ - plugin_name: caching_sha2_password
+2025-08-02 20:47:46,504 - INFO - __init__ - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-08-02 21:50:47,746 - INFO - insert_service - Movie inserted successfully
+2025-08-02 21:50:47,746 - ERROR - insert_service - Failed to insert actor: name missing
+2025-08-02 21:51:37,663 - INFO - insert_service - Movie inserted successfully
+2025-08-02 21:51:37,663 - ERROR - insert_service - Failed to insert actor: name missing
+2025-08-03 13:51:46,473 - INFO - insert_service - Movie inserted successfully
+2025-08-03 13:51:46,473 - ERROR - insert_service - Failed to insert actor: name missing
