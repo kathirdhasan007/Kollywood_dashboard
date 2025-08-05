@@ -46,7 +46,22 @@ class QueryService:
         """
         self.cursor.execute(query, (limit,))
         return self.cursor.fetchall()
-
+    
+    def search_users_by_name(self, keyword):
+        query = "SELECT * FROM Users WHERE username LIKE %s;"
+        self.cursor.execute(query, (keyword,))
+        return self.cursor.fetchall()
+    
+    def view_all_Reviews(self):
+        query = "SELECT * FROM Reviews"
+        self.cursor.execute(query)
+        return self.cursor.fetchall()
+    
+    def view_all_genres(self):
+        query = "SELECT * FROM Genres;"
+        self.cursor.execute(query)
+        return self.cursor.fetchall()
+    
     def close(self):
         if self.cursor:
             self.cursor.close()

@@ -23,13 +23,18 @@ class DeleteService:
         self.conn.commit()
 
     def delete_genre(self, genre_id):
-        query = "DELETE FROM genres WHERE id = ?;"
+        query = "DELETE FROM genres WHERE id = %s;"
         self.cursor.execute(query, (genre_id,))
         self.conn.commit()
 
     def delete_cast_entry(self, movie_id):
         query = "DELETE FROM movie_cast WHERE movie_id = %s;"
         self.cursor.execute(query, (movie_id))
+        self.conn.commit()
+
+    def delete_user(self, user_id):
+        query = "DELETE FROM users WHERE id = %s;"
+        self.cursor.execute(query, (user_id))
         self.conn.commit()
 
     def close(self):

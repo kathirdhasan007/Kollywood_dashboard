@@ -30,10 +30,10 @@ class InsertService:
             self.cursor.execute(query, (genre_name,))
             self.conn.commit()
 
-    def insert_user(self, username, email):
+    def insert_user(self, username, email, password):
         if ValidationUtils.validate_title(username) and ValidationUtils.validate_email(email):
-            query = "INSERT INTO users (username, email) VALUES (%s, %s);"
-            self.cursor.execute(query, (username, email))
+            query = "INSERT INTO users (username, email) VALUES (%s, %s, %s);"
+            self.cursor.execute(query, (username, email, password))
             self.conn.commit()
 
     def insert_review(self, movie_id, user_id, review_text, rating):

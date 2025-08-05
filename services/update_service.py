@@ -15,16 +15,18 @@ class UpdateService:
         self.cursor.execute(query, (new_name, actor_id))
         self.conn.commit()
 
-    def update_review(self, review_id, new_text=None, new_rating=None):
-        if new_text:
-            self.cursor.execute("UPDATE reviews SET review_text = %s WHERE id = %s;", (new_text, review_id))
-        if new_rating:
-            self.cursor.execute("UPDATE reviews SET rating = %s WHERE id = %s;", (new_rating, review_id))
+    def update_review(self, review_id, new_text,new_rating):
+        self.cursor.execute("UPDATE reviews SET rating = %s, review_text = %s WHERE id = %s;", (new_rating, new_text, review_id))
         self.conn.commit()
 
     def update_genre(self, genre_id, new_name):
         query = "UPDATE genres SET name = %s WHERE id = %s;"
         self.cursor.execute(query, (new_name, genre_id))
+        self.conn.commit()
+
+    def update_user(self, Username, new_name):
+        query = "UPDATE users SET name = %s WHERE username = %s;"
+        self.cursor.execute(query, (new_name, Username))
         self.conn.commit()
 
     def close(self):
